@@ -158,3 +158,4 @@ Public reads are cached (`unstable_cache`, tag `catalog`, 5 min). Every admin mu
 The catalogue is loaded and filtered in memory, which is fast for hundreds of products. If it grows
 past roughly 1,000 products, move filtering into SQL inside `SupabaseStore`.
 "# wilson-sri-lanka" 
+"# wilson-srilanka" 
