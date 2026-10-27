@@ -1,0 +1,43 @@
+{
+  "name": "wilson-sri-lanka",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Wilson Sri Lanka product discovery website with admin catalogue management",
+  "engines": {
+    "node": ">=22.18.0"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "test": "node --test \"tests/**/*.test.ts\"",
+    "hash-password": "node scripts/hash-password.ts",
+    "import:retailer": "node scripts/import-retailer.ts",
+    "seed:supabase": "node --env-file-if-exists=.env.local scripts/seed-supabase.ts"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "2.117.2",
+    "gsap": "3.15.0",
+    "lucide-react": "1.49.0",
+    "next": "16.4.2",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "server-only": "^0.0.1",
+    "sharp": "0.35.5",
+    "zod": "4.6.5"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "4.3.3",
+    "@types/node": "^22",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.4.2",
+    "tailwindcss": "4.3.3",
+    "typescript": "5.9.3"
+  }
+}
