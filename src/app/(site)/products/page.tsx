@@ -3,7 +3,7 @@ import { CatalogView } from "@/components/product/CatalogView";
 
 export const metadata: Metadata = {
   title: "All Wilson Products",
-  description: "Browse genuine Wilson tennis rackets, balls, bags, shoes, accessories and basketballs available in Sri Lanka.",
+  description: "Browse genuine Wilson tennis rackets, balls, bags, shoes and accessories available in Sri Lanka.",
   alternates: { canonical: "/products" },
 };
 

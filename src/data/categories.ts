@@ -1,8 +1,8 @@
 import type { Category } from "../types/product.ts";
 
 // Categories enabled for the Sri Lankan catalogue, based on what the verified local
-// retailer actually stocks (tennis + basketball). Padel, pickleball etc. can be added in
-// Admin → Categories once real products are available.
+// retailer actually stocks (tennis only; basketball was dropped). Padel, pickleball etc. can be
+// added in Admin → Categories once real products are available.
 export const SEED_CATEGORIES: Category[] = [
   {
     slug: "tennis-rackets",
@@ -10,7 +10,7 @@ export const SEED_CATEGORIES: Category[] = [
     sport: "tennis",
     description:
       "Blade, Clash, Pro Staff, Ultra and RF rackets — from tour-level frames to lightweight and junior models.",
-    image: "/images/categories/tennis-rackets.webp",
+    image: "/images/categories/tennis-rackets-ultra-blue.webp",
     sortOrder: 10,
     visible: true,
   },
@@ -19,7 +19,7 @@ export const SEED_CATEGORIES: Category[] = [
     name: "Tennis Balls",
     sport: "tennis",
     description: "Tournament, practice and low-compression junior balls.",
-    image: "/images/categories/tennis-balls.webp",
+    image: "/images/categories/tennis-balls-championship.webp",
     sortOrder: 20,
     visible: true,
   },
@@ -37,7 +37,7 @@ export const SEED_CATEGORIES: Category[] = [
     name: "Tennis Shoes",
     sport: "tennis",
     description: "Court shoes built for support, cushioning and traction.",
-    image: "/images/categories/tennis-shoes.webp",
+    image: "/images/categories/tennis-shoes-rush-pro-ace.webp",
     sortOrder: 40,
     visible: true,
   },
@@ -50,20 +50,10 @@ export const SEED_CATEGORIES: Category[] = [
     sortOrder: 50,
     visible: true,
   },
-  {
-    slug: "basketball",
-    name: "Basketball",
-    sport: "basketball",
-    description: "Wilson basketballs for indoor and outdoor play.",
-    image: "/images/categories/basketball.webp",
-    sortOrder: 60,
-    visible: true,
-  },
 ];
 
 export const SPORTS: Record<string, string> = {
   tennis: "Tennis",
-  basketball: "Basketball",
   padel: "Padel",
   pickleball: "Pickleball",
 };

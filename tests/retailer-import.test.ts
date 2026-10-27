@@ -46,6 +46,7 @@ test("non-Wilson listings are ignored, mismatched content becomes a draft", () =
     [
       listing({}),
       listing({ id: 2, title: "YONEX Astrox", vendor: "YONEX", handle: "yonex" }),
+      listing({ id: 4, title: "WILSON Basketball Wave", handle: "wilson-basketball" }),
       listing({
         id: 3,
         handle: "mismatch",

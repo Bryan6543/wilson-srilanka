@@ -98,7 +98,6 @@ export function CategoryForm({
           <label htmlFor={`${id}-sport`} className="field-label">Sport</label>
           <select id={`${id}-sport`} className="field-input" value={c.sport ?? ""} onChange={(e) => setC({ ...c, sport: e.target.value })}>
             <option value="tennis">Tennis</option>
-            <option value="basketball">Basketball</option>
             <option value="padel">Padel</option>
             <option value="pickleball">Pickleball</option>
           </select>

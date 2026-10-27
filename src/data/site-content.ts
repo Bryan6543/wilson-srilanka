@@ -19,8 +19,8 @@ export const DEFAULT_SITE_CONTENT: SiteContent = {
     imageAlt: "Three Wilson tennis rackets with the red W string stencil hanging on a wooden wall",
   },
   saleBanner: {
-    image: "/images/campaign/performance.webp",
-    imageAlt: "A Wilson professional player holding a green Wilson Blade tennis racket",
+    image: "/images/campaign/serena-federer.webp",
+    imageAlt: "Serena Williams and Roger Federer smiling on court, each holding a Wilson tennis racket",
   },
   spotlight: {
     title: "Visit the store",

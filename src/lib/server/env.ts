@@ -1,4 +1,5 @@
 import "server-only";
+import { normaliseSiteUrl } from "@/lib/seo";
 
 // Central, validated access to server configuration. Nothing here is exposed to the
 // browser; only NEXT_PUBLIC_SITE_URL is public by design.
@@ -9,7 +10,7 @@ function read(name: string): string | undefined {
 }
 
 export const env = {
-  siteUrl: (read("NEXT_PUBLIC_SITE_URL") ?? "http://localhost:3000").replace(/\/$/, ""),
+  siteUrl: normaliseSiteUrl(read("NEXT_PUBLIC_SITE_URL")),
   supabaseUrl: read("SUPABASE_URL"),
   supabaseServiceRoleKey: read("SUPABASE_SERVICE_ROLE_KEY"),
   supabaseBucket: read("SUPABASE_STORAGE_BUCKET") ?? "product-images",

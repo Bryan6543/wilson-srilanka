@@ -293,7 +293,6 @@ export function ProductEditor({
           <Field id="sport" label="Sport" error={err("sport")}>
             <select id="sport" className="field-input" value={d.sport} onChange={(e) => set("sport", e.target.value)}>
               <option value="tennis">Tennis</option>
-              <option value="basketball">Basketball</option>
               <option value="padel">Padel</option>
               <option value="pickleball">Pickleball</option>
             </select>

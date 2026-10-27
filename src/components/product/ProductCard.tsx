@@ -36,7 +36,8 @@ export function ProductCard({
           fill
           priority={priority}
           sizes="(min-width: 1280px) 22vw, (min-width: 768px) 30vw, 48vw"
-          className="object-contain mix-blend-multiply transition duration-500 group-hover:scale-[1.03]"
+          // Both photos blend with the tile, so the first must fade out for the second to show cleanly.
+          className={`object-contain mix-blend-multiply transition duration-500 group-hover:scale-[1.03] ${secondary ? "md:group-hover:opacity-0" : ""}`}
         />
         {secondary && (
           <SafeImage

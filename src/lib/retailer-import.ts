@@ -355,6 +355,7 @@ export function mapFeed(
 
   for (const p of feed) {
     if (!isWilsonListing(p)) continue; // other brands are simply out of scope
+    if (classify(p.title).sport === "basketball") continue; // basketball is not sold on this site
     if (seenExternal.has(p.id)) {
       result.skipped.push({ title: p.title, handle: p.handle, reason: "Duplicate retailer product id in feed." });
       continue;
